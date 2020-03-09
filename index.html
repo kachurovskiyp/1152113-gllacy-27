@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body-slide-1">
   <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
   <div class="wrapper">
     <header class="header">
@@ -76,19 +76,27 @@
 
     <section class="main-slider">
       <h2 class="visually-hidden">Акции недели</h2>
-      <div class="slide-1">
+      <div class="slide slide-1 ">
         <img src="img/ice-creame.png" width="1045" height="881" alt="Два рожка с мороженым">
         <p class="slider-title">Крем-брюле и пломбир <span>с малиновым джемом</span></p>
-        <button type="button" class="content-button slider-button">Давайте оба!</button>
       </div>
+      <div class="slide slide-2 ">
+        <img src="img/ice-creame-2.png" width="1045" height="843" alt="Два рожка с мороженым">
+        <p class="slider-title">Шоколадный пломбир и лимонный сорбет</p>
+      </div>
+      <div class="slide slide-3 active">
+        <img src="img/ice-creame-3.png" width="1045" height="827" alt="Два рожка с мороженым">
+        <p class="slider-title">Пломбир с помадкой<br> и клубничный щербет</p>
+      </div>
+      <button type="button" class="content-button slider-button">Давайте оба!</button>
       <div class="slider-navigation">
-        <button type="button" class="active">
+        <button type="button" class="slide-1-button active">
           <p class="visually-hidden">Слайд 1</p>
         </button>
-        <button type="button">
+        <button type="button" class="slide-2-button">
           <p class="visually-hidden">Слайд 2</p>
         </button>
-        <button type="button">
+        <button type="button" class="slide-3-button">
           <p class="visually-hidden">Слайд 3</p>
         </button>
       </div>
@@ -116,6 +124,7 @@
         </a>
         <span class="price">310 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
         <img src="img/bestseler-1.png" width="267" height="267" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой">
+
       </article>
       <article class="bestseller">
         <a href="#">
@@ -174,7 +183,7 @@
         <a href="tel:+88124502525">8 812 450-25-25</a>
         (с 10 до 20 ежедневно)
       </p>
-      <button type="button" class="content-button">Форма обратной связи</button>
+      <button type="button" class="content-button feedback-button">Форма обратной связи</button>
     </div>
   </section>
   <footer class="footer">
@@ -211,5 +220,7 @@
       </form>
     </section>
   </div>
+  <script src="js/main-slider.js"></script>
+  <script src="js/feedback-modal.js"></script>
 </body>
 </html>

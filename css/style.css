@@ -24,8 +24,6 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-
-  background-color: #849d8f;
 }
 
 .visually-hidden {
@@ -62,6 +60,18 @@ body{
   cursor: pointer;
 }
 
+.content-button:hover{
+  background-color: #f07a63;
+	background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+
+  box-shadow: 2px 2px 2px #ac1000;
+}
+
+.content-button:active{
+  background-image: linear-gradient(to bottom, #d84732, #e1613e);
+  box-shadow: inset 2px 2px 1px #942718;
+}
+
 /* header */
 
 .header{
@@ -93,6 +103,10 @@ body{
   border: none;
   background-color: #f7f6f3;
   color: #000000;
+}
+
+.site-navigation a:active{
+  box-shadow: inset 2px 2px 1px #696969;
 }
 
 .site-navigation{
@@ -173,6 +187,8 @@ body{
   width: 100%;
   height: 44px;
   padding-left: 5px;
+
+  border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
 
@@ -290,6 +306,12 @@ button.login:hover svg{
   text-decoration: underline;
 }
 
+.header-login-form a:hover,
+.header-login-form a:focus,
+.header-login-form a:active{
+  color: #eb6552;
+}
+
 button.login:hover ~ .header-login,
 button.login:focus ~ .header-login{
   display: block;
@@ -351,6 +373,7 @@ button.basket:hover svg{
 
 .site-navigation .drop-menu:hover{
   display: block;
+  z-index: 1;
 }
 
 .drop-menu a{
@@ -419,9 +442,22 @@ button.basket:hover svg{
 .drop-menu a:active,
 .drop-menu li:active{
   background-color: #f6b5a5;
+  box-shadow: none;
 }
 
 /* slider */
+
+.body-slide-1{
+  background-color: #849d8f;
+}
+
+.body-slide-2{
+  background-color: #8996a6;
+}
+
+.body-slide-3{
+  background-color: #9d8b84;
+}
 
 .main-slider{
 	position: relative;
@@ -429,19 +465,37 @@ button.basket:hover svg{
 
   display: flex;
 	justify-content: center;
+}
 
+.slide{
+  display: none;
+}
+
+.slide.active{
+  display: block;
+}
+
+.slide img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
   z-index: -1;
 }
 
-.main-slider img{
-	position: absolute;
-	top: 52%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
+.slide-1 img{
+  top: 52%;
 }
 
-.main-slider .slider-title{
+.slide-2 img{
+  top: 49%;
+}
+
+.slide-3 img{
+  top: 47%;
+}
+
+.slide .slider-title{
 	max-width: 680px;
   margin: 266px -7px 32px 2px;
   padding: 0;
@@ -450,6 +504,7 @@ button.basket:hover svg{
   font-weight: bold;
   line-height: 60px;
 	color: #ffffff;
+  text-align: center;
 }
 
 .slider-title span{
@@ -457,15 +512,18 @@ button.basket:hover svg{
 }
 
 .main-slider .slider-button{
+  position: absolute;
+  bottom: 121px;
+  left: 462px;
+
 	display: block;
-  margin-left: 198px;
-  margin-top: -2px;
   width: 277px;
 	height: 64px;
 	border-radius: 30px;
 
 	font-size: 32px;
 	line-height: 32px;
+  cursor: pointer;
 }
 
 .main-slider .slider-navigation{
@@ -482,6 +540,11 @@ button.basket:hover svg{
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-navigation button:hover{
+  background-color: rgba(247, 247, 247, 0.4);
 }
 
 .slider-navigation button.active{
@@ -562,11 +625,21 @@ button.basket:hover svg{
 }
 
 .bestsellers article{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
   position: relative;
 	width: 280px;
 	min-height: 330px;
-  display: flex;
-  flex-direction: column-reverse;
+
+  padding: 5px;
+}
+
+.bestsellers article:hover,
+.bestsellers article:focus{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
 .bestsellers article::before{
@@ -742,6 +815,11 @@ button.basket:hover svg{
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
+}
+
+.blog a:hover,
+.blog a:focus{
+  color: #eb6552;
 }
 
 .subscription{
@@ -932,6 +1010,11 @@ button.basket:hover svg{
   border-bottom: 1px solid rgba(248, 247, 244, 0.2);
 }
 
+.footer-navigation a:hover,
+.footer-navigation a:focus{
+  color: #eb6552;
+}
+
 .footer-info li:first-child{
   position: relative;
   font-weight: bold;
@@ -979,6 +1062,11 @@ button.basket:hover svg{
   left: 0;
 
   background: url('../img/logo-htmlacademy-small.svg') no-repeat 0 0;
+}
+
+.copyright a:hover,
+.copyright a:focus{
+  color: #eb6552;
 }
 
 /* feedback popup */
