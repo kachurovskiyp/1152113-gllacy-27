@@ -72,6 +72,81 @@ body{
   box-shadow: inset 2px 2px 1px #942718;
 }
 
+/* catalog items */
+
+.catalog-item{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  position: relative;
+	width: 280px;
+	min-height: 330px;
+
+  padding: 5px;
+}
+
+.catalog-item:hover,
+.catalog-item:focus{
+
+}
+
+.catalog-item img{
+  z-index: -1;
+}
+
+.catalog-item h3{
+  margin-top: 13px;
+  margin-left: -9px;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.catalog-item .price{
+  position: absolute;
+  bottom: 101px;
+  left: -1px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 13px;
+  color: #ffffff;
+}
+
+.price .price-currency{
+  position: absolute;
+  left: 81px;
+  width: 80px;
+}
+
+.price .price-weight{
+  font-size: 30px;
+}
+
+.item-link{
+  /* display: none */
+  position: absolute;
+  left: 30px;
+  bottom: -40px;
+
+  text-align: center;
+  line-height: 15px;
+}
+
+.catalog-item.bestseller::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background: #ffffff url('../img/hit.svg') no-repeat center center;
+}
+
 /* header */
 
 .header{
@@ -207,25 +282,28 @@ body{
 	margin-right: 0;
 }
 
-.header-navigation button.search{
-	width: 30px;
+.header-navigation a.search{
+  display: block;
+  width: 30px;
+  height: 30px;
 	border-radius: 50%;
 
   margin-right: 12px;
   margin-top: -11px;
+  padding: 6px;
   z-index: 3;
 }
 
-button.search svg{
+a.search svg{
   fill: #ffffff;
 }
 
-button.search:hover svg{
+a.search:hover svg{
   fill: #000000;
 }
 
-button.search:hover ~ .header-search,
-button.search:focus ~ .header-search{
+a.search:hover ~ .header-search,
+a.search:focus ~ .header-search{
   display: block;
 }
 
@@ -234,23 +312,26 @@ button.search:focus ~ .header-search{
   display: block;
 }
 
-.header-navigation button.login{
+.header-navigation a.login{
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   width: 90px;
+  height: 30px;
   padding: 0 10px;
   margin-right: 11px;
   margin-top: -9px;
+
+  border-radius: 20px;
   z-index: 3;
 }
 
-button.login svg{
+a.login svg{
   fill: #ffffff;
 }
 
-button.login:hover svg{
+a.login:hover svg{
   fill: #000000;
 }
 
@@ -312,8 +393,8 @@ button.login:hover svg{
   color: #eb6552;
 }
 
-button.login:hover ~ .header-login,
-button.login:focus ~ .header-login{
+a.login:hover ~ .header-login,
+a.login:focus ~ .header-login{
   display: block;
 }
 
@@ -324,22 +405,24 @@ button.login:focus ~ .header-login{
 
 /* header navigation */
 
-.header-navigation button.basket{
+.header-navigation a.basket{
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   padding: 0 10px;
   width: 100px;
+  height: 30px;
   margin-right: 2px;
   margin-top: -8px;
+  border-radius: 20px;
 }
 
-button.basket svg{
+a.basket svg{
   fill: #ffffff;
 }
 
-button.basket:hover svg{
+a.basket:hover svg{
   fill: #000000;
 }
 
@@ -362,16 +445,22 @@ button.basket:hover svg{
 	margin-right: 0;
 }
 
-.site-navigation .drop-menu{
+.site-navigation .drop-menu-wrapper{
   display: none;
   position: absolute;
   top: 25px;
   left: 2px;
-  width: 145px;
   padding-top: 10px;
 }
 
-.site-navigation .drop-menu:hover{
+.site-navigation .drop-menu{
+  width: 145px;
+  padding: 3px 0;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.site-navigation .drop-menu-wrapper:hover{
   display: block;
   z-index: 1;
 }
@@ -385,17 +474,12 @@ button.basket:hover svg{
   color: #323232;
 }
 
-.drop-menu-link:hover ~ .drop-menu{
+.drop-menu-link:hover ~ .drop-menu-wrapper{
   display: block;
 }
 
 .drop-menu ul{
-	margin: 0;
-	padding: 0;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  background-color: #f8f7f4;
-  border-radius: 5px;
+
 }
 
 .drop-menu li{
@@ -512,15 +596,17 @@ button.basket:hover svg{
 }
 
 .main-slider .slider-button{
+  display: block;
+
   position: absolute;
   bottom: 121px;
   left: 462px;
 
-	display: block;
   width: 277px;
 	height: 64px;
 	border-radius: 30px;
 
+  text-align: center;
 	font-size: 32px;
 	line-height: 32px;
   cursor: pointer;
@@ -592,17 +678,18 @@ button.basket:hover svg{
   line-height: 22px;
 }
 
-.banners button{
+.banners .banner-link{
   position: absolute;
   right: 22px;
   bottom: 25px;
+  line-height: 15px;
 }
 
 .banners .raspberry{
   background: #59122b url('../img/raspberry-bg.jpg');
 }
 
-.raspberry button{
+.raspberry .banner-link{
   width: 165px;
 }
 
@@ -622,70 +709,6 @@ button.basket:hover svg{
   margin: 0 auto;
   padding-left: 10px;
   width: 1175px;
-}
-
-.bestsellers article{
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-
-  position: relative;
-	width: 280px;
-	min-height: 330px;
-
-  padding: 5px;
-}
-
-.bestsellers article:hover,
-.bestsellers article:focus{
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-}
-
-.bestsellers article::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 3px;
-  width: 61px;
-  height: 61px;
-  border-radius: 50%;
-  background: #ffffff url('../img/hit.svg') no-repeat center center;
-}
-
-.bestsellers h3{
-  margin-top: 13px;
-  margin-left: -9px;
-
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.bestsellers .price{
-  position: absolute;
-  bottom: 101px;
-  left: -1px;
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 13px;
-  color: #ffffff;
-}
-
-.price .price-currency{
-  position: absolute;
-  left: 81px;
-  width: 80px;
-}
-
-.price .price-weight{
-  font-size: 30px;
-}
-
-.bestsellers img{
-  z-index: -1;
 }
 
 /* information */
@@ -833,12 +856,13 @@ button.basket:hover svg{
 
   overflow: hidden;
 
-  background-image: repeating-linear-gradient(135deg,
-                      #fe9e90 0,#fe9e90 1px,
-                      #ffffff 1px,#ffffff 8px,
-                      #92cdff 8px,#92cdff 15px,
-                      #ffffff 15px,#ffffff 22px,
-                      #fe9e90 22px,#fe9e90 28px);
+  background-image:
+    repeating-linear-gradient(135deg,
+      #fe9e90 0,#fe9e90 1px,
+      #ffffff 1px,#ffffff 8px,
+      #92cdff 8px,#92cdff 15px,
+      #ffffff 15px,#ffffff 22px,
+      #fe9e90 22px,#fe9e90 28px);
 }
 
 .subscription-wrap{
