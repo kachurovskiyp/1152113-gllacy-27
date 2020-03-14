@@ -57,9 +57,9 @@
         <div class="header-login">
           <form class="header-login-form" action="index.html" method="post">
             <label for="login-email" class="visually-hidden">Введите свой электронный адрес</label>
-            <input type="email" id="login-email" placeholder="mail@example.com">
+            <input type="email" id="login-email" placeholder="email@example.com">
             <label for="password">Ваш пароль</label>
-            <input type="password" id="password" placeholder="password">
+            <input type="password" id="password" value="password">
             <button type="submit" class="content-button">Войти</button>
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -81,12 +81,12 @@
 
     <section class="main-slider">
       <h2 class="visually-hidden">Акции недели</h2>
-      <div class="slide slide-1 active">
+      <div class="slide slide-1 ">
         <img src="img/ice-creame.png" width="1045" height="881" alt="Два рожка с мороженым">
         <p class="slider-title">Крем-брюле и пломбир <span>с малиновым джемом</span></p>
         <a href="#" type="button" class="content-button slider-button">Давайте оба!</a>
       </div>
-      <div class="slide slide-2">
+      <div class="slide slide-2 active">
         <img src="img/ice-creame-2.png" width="1045" height="843" alt="Два рожка с мороженым">
         <p class="slider-title">Шоколадный пломбир и лимонный сорбет</p>
         <a href="#" type="button" class="content-button slider-button">Давайте оба!</a>
@@ -140,6 +140,7 @@
         </a>
         <span class="price">380 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
         <img src="img/bestseler-2.png" width="267" height="267" alt="Сливочно-кофейное мороженное с кусочками шоколада">
+        <a href="#" class="content-button item-link">Быстрый просмотр</a>
       </article>
 
       <article class="catalog-item bestseller">
@@ -148,6 +149,7 @@
         </a>
         <span class="price">355 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
         <img src="img/bestseler-3.png" width="267" height="267" alt="Сливочно-клубничное мороженное с присыпкой из белого шоколада">
+        <a href="#" class="content-button item-link">Быстрый просмотр</a>
       </article>
 
       <article class="catalog-item bestseller">
@@ -156,6 +158,7 @@
         </a>
         <span class="price">415 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
         <img src="img/bestseler-4.png" width="267" height="267" alt="Сливочное мороженное крем-брюле с карамельной подливкой">
+        <a href="#" class="content-button item-link">Быстрый просмотр</a>
       </article>
     </section>
 
@@ -200,10 +203,10 @@
   </section>
   <footer class="footer">
     <ul class="social-links">
-      <li><a href="#" class="twitter" title="twitter" target="_blank"></a></li>
-      <li><a href="#" class="instagram" title="instagram" target="_blank"></a></li>
-      <li><a href="#" class="facebook" title="facebook" target="_blank"></a></li>
-      <li><a href="#" class="vkontakte" title="vkontakte" target="_blank"></a></li>
+      <li><a href="#" class="twitter" aria-lable="twitter" target="_blank"></a></li>
+      <li><a href="#" class="instagram" aria-lable="instagram" target="_blank"></a></li>
+      <li><a href="#" class="facebook" aria-lable="facebook" target="_blank"></a></li>
+      <li><a href="#" class="vkontakte" aria-lable="vkontakte" target="_blank"></a></li>
     </ul>
     <div class="footer-navigation">
       <ul class="footer-info">

@@ -43,11 +43,12 @@ body{
 }
 
 .content-button{
-	height: 45px;
+	min-height: 45px;
 	padding: 15px 20px;
 
 	background-color: #ed5a3d;
 	background-image: linear-gradient(to bottom, #f26843, #e74b36);
+  box-shadow: 0px 4px 4px rgba(172, 16, 0, 0.25);
 
 	border: none;
 	border-radius: 22px;
@@ -64,7 +65,11 @@ body{
   background-color: #f07a63;
 	background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
 
-  box-shadow: 2px 2px 2px #ac1000;
+  box-shadow: 0px 2px 2px #ac1000;
+}
+
+.content-button:active{
+  box-shadow: inset 0px 2px 2px #942718;
 }
 
 .content-button:active{
@@ -86,9 +91,39 @@ body{
   padding: 5px;
 }
 
-.catalog-item:hover,
-.catalog-item:focus{
+.catalog-item:hover > .item-link,
+.catalog-item:focus > .item-link{
+  display: block;
+}
 
+.catalog-item:hover::after,
+.catalog-item:focus::after{
+  content: '';
+  width: 300px;
+  height: 410px;
+
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-item .item-link{
+  display: none;
+  padding: 15px 0;
+
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+
+  transform: translateX(-50%);
+  width: 200px;
+  height: 45px;
+
+  text-align: center;
+  line-height: 15px;
 }
 
 .catalog-item img{
@@ -124,16 +159,6 @@ body{
 
 .price .price-weight{
   font-size: 30px;
-}
-
-.item-link{
-  /* display: none */
-  position: absolute;
-  left: 30px;
-  bottom: -40px;
-
-  text-align: center;
-  line-height: 15px;
 }
 
 .catalog-item.bestseller::before{
@@ -181,7 +206,7 @@ body{
 }
 
 .site-navigation a:active{
-  box-shadow: inset 2px 2px 1px #696969;
+  box-shadow: inset 0px 2px 1px #696969;
 }
 
 .site-navigation{
@@ -197,6 +222,9 @@ body{
 
 	text-align: right;
 	flex-grow: 2;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .work-hours a{
@@ -261,12 +289,28 @@ body{
 .header-search-form input[type="search"]{
   width: 100%;
   height: 44px;
-  padding-left: 5px;
+  padding-left: 15px;
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
 
+.header-search-form input:hover{
+  border: 2px solid #c7c6c5;
+  padding-left: 14px;
+}
+
+.header-search-form input:focus,
+.header-search-form input:active{
+  outline: none;
+  border: 2px solid #8fbdec;
+  padding-left: 14px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+}
 
 .header-navigation button{
 	margin-right: 10px;
@@ -370,6 +414,26 @@ a.login:hover svg{
   color: #999999;
   font-size: 14px;
   line-height: 24px;
+}
+
+.header-login-form input:hover{
+  border: 2px solid #c7c6c5;
+  padding-left: 14px;
+}
+
+.header-login-form input:focus,
+.header-login-form input:active{
+  outline: none;
+  border: 2px solid #8fbdec;
+  padding-left: 14px;
+}
+
+.header-login-form input[type="email"]:focus,
+.header-login-form input[type="email"]:active{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
 }
 
 .header-login-form button{
@@ -603,7 +667,7 @@ a.basket:hover svg{
   left: 462px;
 
   width: 277px;
-	height: 64px;
+	min-height: 64px;
 	border-radius: 30px;
 
   text-align: center;
@@ -724,6 +788,8 @@ a.basket:hover svg{
   margin: 22px auto;
   border-radius: 15px;
   background: #eee3cb url('../img/wafer.png') repeat 0 0;
+
+  color: #323232;
 }
 
 .information h2{
@@ -823,6 +889,7 @@ a.basket:hover svg{
 .blog{
   padding: 24px 20px;
   background: #ffffff url('../img/strawberry-bg.jpg') no-repeat 0 0;
+  color: #323232;
 }
 
 .blog h2{
@@ -838,6 +905,7 @@ a.basket:hover svg{
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
+  color: #323232;
 }
 
 .blog a:hover,
@@ -874,6 +942,7 @@ a.basket:hover svg{
   padding: 14px 20px;
   border-radius: 15px;
   background-color: #ffffff;
+  color: #5A5A5A;
 }
 
 .subscription-wrap form{
@@ -900,6 +969,23 @@ a.basket:hover svg{
   line-height: 24px;
 }
 
+.subscription-form input:hover{
+  border: 2px solid #c7c6c5;
+  padding: 0;
+  padding-left: 13px;
+}
+
+.subscription-form input:focus,
+.subscription-form input:active{
+  outline: none;
+  border: 2px solid #8fbdec;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+}
+
 .subscription-form button{
   width: 127px;
 }
@@ -921,6 +1007,7 @@ a.basket:hover svg{
 
   background-color: #ffffff;
   border-radius: 15px;
+  color: #323232;
 }
 
 .contacts p{
@@ -949,6 +1036,7 @@ a.basket:hover svg{
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  color: #323232;
 }
 
 .contacts button{
@@ -1000,6 +1088,13 @@ a.basket:hover svg{
 
   border-radius: 50%;
   background-color: #e6ebe9;
+  opacity: 0.8;
+}
+
+.social-links a:hover,
+.social-links a:focus,
+.social-links a:active{
+  opacity: 1;
 }
 
 .social-links .twitter{
@@ -1174,6 +1269,28 @@ a.basket:hover svg{
   border-radius: 5px;
   padding: 0 15px;
   color: #999999;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover{
+  border: 2px solid #c7c6c5;
+  padding-left: 14px;
+}
+
+.feedback-form input:focus,
+.feedback-form input:active,
+.feedback-form textarea:focus,
+.feedback-form textarea:active{
+  outline: none;
+  border: 2px solid #8fbdec;
+  padding-left: 14px;
+}
+
+.feedback-form textarea:focus,
+.feedback-form textarea:active,
+.feedback-form textarea:hover{
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
 
 .feedback-form input{
