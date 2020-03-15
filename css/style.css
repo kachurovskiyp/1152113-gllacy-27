@@ -87,8 +87,6 @@ body{
   position: relative;
 	width: 280px;
 	min-height: 330px;
-
-  padding: 5px;
 }
 
 .catalog-item:hover > .item-link,
@@ -132,7 +130,6 @@ body{
 
 .catalog-item h3{
   margin-top: 13px;
-  margin-left: -9px;
 
   text-align: center;
   font-weight: 500;
@@ -144,7 +141,7 @@ body{
 .catalog-item .price{
   position: absolute;
   bottom: 101px;
-  left: -1px;
+  left: 6px;
   font-weight: bold;
   font-size: 45px;
   line-height: 13px;
@@ -165,7 +162,7 @@ body{
   content: '';
   position: absolute;
   top: 0;
-  left: 3px;
+  left: 7px;
   width: 61px;
   height: 61px;
   border-radius: 50%;
@@ -645,7 +642,7 @@ a.basket:hover svg{
 
 .slide .slider-title{
 	max-width: 680px;
-  margin: 266px -7px 32px 2px;
+  margin: 266px -7px 32px -4px;
   padding: 0;
 
 	font-size: 60px;
@@ -656,7 +653,7 @@ a.basket:hover svg{
 }
 
 .slider-title span{
-  margin-left: 10px;
+  margin-left: -2px;
 }
 
 .main-slider .slider-button{
@@ -678,8 +675,8 @@ a.basket:hover svg{
 
 .main-slider .slider-navigation{
 	position: absolute;
-	left: 23px;
-	bottom: 138px;
+	left: 26px;
+	bottom: 139px;
 }
 
 .slider-navigation button{
@@ -771,7 +768,6 @@ a.basket:hover svg{
   justify-content: space-around;
   align-items: flex-start;
   margin: 0 auto;
-  padding-left: 10px;
   width: 1175px;
 }
 
@@ -794,6 +790,7 @@ a.basket:hover svg{
 
 .information h2{
   margin-bottom: 0;
+  padding-left: 2px;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -807,7 +804,7 @@ a.basket:hover svg{
   position: relative;
   display: block;
   width: 536px;
-  padding-left: 46px;
+  padding-left: 48px;
   margin: 0;
   margin-top: 6px;
   font-weight: normal;
@@ -997,10 +994,20 @@ a.basket:hover svg{
   min-height: 430px;
 }
 
+.map .contacts-wrap{
+  position: relative;
+  min-height: 430px;
+  width: 1230px;
+  margin: 0 auto;
+
+  background: url(../img/map.png) no-repeat center center;
+}
+
 .map .contacts{
   position: absolute;
   top: 63px;
-  right: 365px;
+  right: 40px;
+  z-index: 1;
 
   width: 300px;
   padding: 10px 22px;
@@ -1008,6 +1015,12 @@ a.basket:hover svg{
   background-color: #ffffff;
   border-radius: 15px;
   color: #323232;
+}
+
+.map iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contacts p{
@@ -1042,6 +1055,7 @@ a.basket:hover svg{
 .contacts button{
   width: 255px;
   margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 /* footer */
@@ -1142,8 +1156,8 @@ a.basket:hover svg{
 .footer-info li:first-child::before{
   content: '';
   position: absolute;
-  top: 0;
-  left: -24px;
+  top: 2px;
+  left: -21px;
   width: 15px;
   height: 13px;
   background: url('../img/like.svg');
@@ -1154,7 +1168,7 @@ a.basket:hover svg{
 }
 
 .footer-navigation .footer-documents{
-  margin-left: 26px;
+  margin-left: 31px;
 }
 
 .footer-documents li{
@@ -1177,8 +1191,8 @@ a.basket:hover svg{
   height: 38px;
 
   position: absolute;
-  top: -14px;
-  left: 0;
+  top: -13px;
+  left: 2px;
 
   background: url('../img/logo-htmlacademy-small.svg') no-repeat 0 0;
 }
