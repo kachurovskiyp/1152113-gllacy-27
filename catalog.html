@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gllasy Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="body-slide-1 inner-page">
+    <h1 class="visually-hidden">Каталог магазина мороженного "Глейси"</h1>
+    <div class="wrapper">
+      <header class="header inner-header">
+        <nav class="header-navigation">
+          <a class="header-logo">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
+          </a>
+          <ul class="site-navigation">
+            <li>
+              <a href="#" class="drop-menu-link">Каталог</a>
+              <div class="drop-menu-wrapper">
+                <ul class="drop-menu">
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="#">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О Компании</a></li>
+          </ul>
+          <a href="#" class="header-button search">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+              <g id="Layer_2">
+                <path d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2S11,4.019,11,6.5S8.981,11,6.5,11z"/>
+              </g>
+            </svg>
+            <p class="visually-hidden">Поиск</p>
+          </a>
+          <div class="header-search">
+            <form class="header-search-form" action="index.html" method="post">
+              <label for="search-line" class="visually-hidden">Поиск</label>
+              <input type="search" id="search-line" placeholder="Крем-брюле">
+            </form>
+          </div>
+          <a href="#" type="button" class="header-button login">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+              <g>
+                <polygon points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959"/>
+                <path d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
+              </g>
+            </svg>
+            Вход
+          </a>
+          <div class="header-login">
+            <form class="header-login-form" action="index.html" method="post">
+              <label for="login-email" class="visually-hidden">Введите свой электронный адрес</label>
+              <input type="email" id="login-email" placeholder="email@example.com">
+              <label for="password">Ваш пароль</label>
+              <input type="password" id="password" value="password">
+              <button type="submit" class="content-button">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </div>
+          <a href="#" type="button" class="header-button basket full-basket">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+              <polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+              <circle fill="#343434" cx="6.984" cy="18" r="2"/>
+              <circle fill="#343434" cx="15.984" cy="18" r="2"/>
+              <path fill="#343434" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66L17.372,13z"/>
+            </svg>
+            2 товара
+          </a>
+          <div class="header-basket">
+            
+          </div>
+        </nav>
+        <p class="work-hours">C 10 до 20, ежедневно <br><a href="tel:+88124502525">8 812 450-25-25</a></p>
+      </header>
+    </div>
+
+    <main>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li>Сливочное</li>
+      </ul>
+      <h2 class="main-title">Сливочное мороженое</h2>
+      <form action="catalog.html" class="filter-form">
+        <fieldset>
+          <div class="fieldset-wrap">
+            <div class="sort-wrap">
+              <p class="legend">Сортировка</p>
+              <label for="sort-direction" class="visually-hidden">Сортировка</label>
+              <select class="sort-direction filter-box" id="sort-direction">
+                <option value="by-popular">по популярности</option>
+                <option value="price-up">сначала недорогие</option>
+                <option value="price-down">сначала дорогие</option>
+                <option value="by-fat">по жирности</option>
+              </select>
+            </div>
+            <div class="price-wrap">
+              <p class="legend">Цена: 100 руб. - 500 руб.</p>
+              <label for="price" class="visually-hidden">Стоимость</label>
+              <input type="range" class="visually-hidden" name="price" id="price" value="0" min="0" max="5000">
+              <div class="range-box filter-box">
+                <div class="range-scale">
+                  <button type="button" class="range-min"></button>
+                  <button type="button" class="range-max"></button>
+                </div>
+              </div>
+            </div>
+            <div class="fat-wrap">
+              <p class="legend">Жирность</p>
+              <ul class="fat-list filter-box">
+                <li>
+                  <input type="radio" class="fat-radio visually-hidden" name="ice-cream-fat" id="fat-0" value="0">
+                  <label for="fat-0">0%</label>
+                </li>
+                <li>
+                  <input type="radio" class="fat-radio visually-hidden" name="ice-cream-fat" id="fat-10" value="10" checked>
+                  <label for="fat-10">до 10%</label>
+                </li>
+                <li>
+                  <input type="radio" class="fat-radio visually-hidden" name="ice-cream-fat" id="fat-30" value="30">
+                  <label for="fat-30">до 30%</label>
+                </li>
+                <li>
+                  <input type="radio" class="fat-radio visually-hidden" name="ice-cream-fat" id="fat-up-30" value="40">
+                  <label for="fat-up-30">выше 30%</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="extenders-wrap">
+            <p class="legend">Наполнители:</p>
+            <ul class="extenders-list filter-box">
+              <li>
+                <input type="checkbox" class="extenders-check visually-hidden" name="chocolate" value="chocolate" id="chocolate" checked>
+                <label for="chocolate">шоколадные</label>
+              </li>
+              <li>
+                <input type="checkbox" class="extenders-check visually-hidden" name="sugar" value="sugar" id="sugar" checked>
+                <label for="sugar">сахарные присыпки</label>
+              </li>
+              <li>
+                <input type="checkbox" class="extenders-check visually-hidden" name="fruit" value="fruit" id="fruit">
+                <label for="fruit">фрукты</label>
+              </li>
+              <li>
+                <input type="checkbox" class="extenders-check visually-hidden" name="syrups" value="syrups" id="syrups">
+                <label for="syrups">сиропы</label>
+              </li>
+              <li>
+                <input type="checkbox" class="extenders-check visually-hidden" name="jams" value="jams" id="jams">
+                <label for="jams">джемы</label>
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Применить</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <ul class="social-links">
+        <li><a href="#" class="twitter" aria-lable="twitter" target="_blank"></a></li>
+        <li><a href="#" class="instagram" aria-lable="instagram" target="_blank"></a></li>
+        <li><a href="#" class="facebook" aria-lable="facebook" target="_blank"></a></li>
+        <li><a href="#" class="vkontakte" aria-lable="vkontakte" target="_blank"></a></li>
+      </ul>
+      <div class="footer-navigation">
+        <ul class="footer-info">
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+        </ul>
+        <ul class="footer-documents">
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экогологические стандарты</a></li>
+        </ul>
+      </div>
+      <p class="copyright">Сделано в <a href="https://up.htmlacademy.ru/htmlcss/27">HTML Academy</a> © 2019</p>
+    </footer>
+  </body>
+</html>
