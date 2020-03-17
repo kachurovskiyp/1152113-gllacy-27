@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>Gllasy Shop</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body-slide-1 inner-page">
     <h1 class="visually-hidden">Каталог магазина мороженного "Глейси"</h1>
     <div class="wrapper">
       <header class="header inner-header">
         <nav class="header-navigation">
-          <a class="header-logo">
+          <a href="index.html" class="header-logo">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
           </a>
           <ul class="site-navigation">
@@ -135,19 +135,19 @@
               <ul class="fat-list filter-box">
                 <li>
                   <input type="radio" class="fat-radio visually-hidden" name="ice-cream-fat" id="fat-0" value="0">
-                  <label for="fat-0">0%</label>
+                  <label class="fat-label" for="fat-0">0%</label>
                 </li>
                 <li>
                   <input type="radio" class="fat-radio visually-hidden" name="ice-cream-fat" id="fat-10" value="10" checked>
-                  <label for="fat-10">до 10%</label>
+                  <label class="fat-label" for="fat-10">до 10%</label>
                 </li>
                 <li>
                   <input type="radio" class="fat-radio visually-hidden" name="ice-cream-fat" id="fat-30" value="30">
-                  <label for="fat-30">до 30%</label>
+                  <label class="fat-label" for="fat-30">до 30%</label>
                 </li>
                 <li>
                   <input type="radio" class="fat-radio visually-hidden" name="ice-cream-fat" id="fat-up-30" value="40">
-                  <label for="fat-up-30">выше 30%</label>
+                  <label class="fat-label" for="fat-up-30">выше 30%</label>
                 </li>
               </ul>
             </div>
@@ -222,7 +222,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <h3>Сливочное с брусничным джемом</h3>
+            <h3>Сливочное с брусничным<br> джемом</h3>
           </a>
           <span class="price">325 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
           <img src="img/item-5.png" width="267" height="267" alt="Сливочное мороженное с брусничным джемом">
@@ -240,7 +240,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+            <h3>Сливочно-лимонное с<br> карамельной присыпкой</h3>
           </a>
           <span class="price">375 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
           <img src="img/item-7.png" width="267" height="267" alt="Сливочно-лимонное мороженное с карамельной присыпкой">
@@ -249,7 +249,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <h3>Сливочное с шоколадной стружкой</h3>
+            <h3>Сливочное с шоколадной<br> стружкой</h3>
           </a>
           <span class="price">320 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
           <img src="img/item-8.png" width="267" height="267" alt="Сливочное мороженное с шоколадной стружкой">
@@ -258,7 +258,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <h3>Сливочно-ванильное с кусочками шоколада</h3>
+            <h3>Сливочно-ванильное с<br> кусочками шоколада</h3>
           </a>
           <span class="price">440 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
           <img src="img/item-9.png" width="267" height="267" alt="Сливочно-ванильное мороженное с кусочками шоколада">
@@ -267,7 +267,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <h3>Сливочноe с ментоловым сиропом</h3>
+            <h3>Сливочноe с ментоловым<br> сиропом</h3>
           </a>
           <span class="price">435 <span class="price-currency">₽<span class="price-weight">/кг</span></span></span>
           <img src="img/item-10.png" width="267" height="267" alt="Сливочное мороженное с ментоловым сиропом">
@@ -294,7 +294,7 @@
       </section>
       <div class="page-navigation">
         <ul class="page-list">
-          <li><a href="#" class="back-link"><span class="visually-hidden">Назад</span></a></li>
+          <li><a href="#" class="back-link disabled"><span class="visually-hidden">Назад</span></a></li>
           <li><a href="#" class="current-page">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
