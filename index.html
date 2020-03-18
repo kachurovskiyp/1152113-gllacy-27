@@ -5,7 +5,7 @@
   <title>Gllasy Shop</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body-slide-1">
   <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
@@ -45,8 +45,8 @@
             <input type="search" id="search-line" placeholder="Крем-брюле">
           </form>
         </div>
-        <a href="#" type="button" class="header-button login">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+        <a href="#" class="header-button login">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
             <g>
               <polygon points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959"/>
               <path d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
@@ -65,8 +65,8 @@
             <a href="#">Новая регистрация</a>
           </form>
         </div>
-        <a href="#" type="button" class="header-button basket">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+        <a href="#" class="header-button basket">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
             <g>
               <path d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66L17.372,13z"/>
               <circle cx="6.984" cy="18" r="2"/>
@@ -84,27 +84,27 @@
       <div class="slide slide-1 active">
         <img src="img/ice-creame.png" width="1045" height="881" alt="Два рожка с мороженым">
         <p class="slider-title">Крем-брюле и пломбир <span>с малиновым джемом</span></p>
-        <a href="#" type="button" class="content-button slider-button">Давайте оба!</a>
+        <a href="#" class="content-button slider-button">Давайте оба!</a>
       </div>
       <div class="slide slide-2">
         <img src="img/ice-creame-2.png" width="1045" height="843" alt="Два рожка с мороженым">
         <p class="slider-title">Шоколадный пломбир и лимонный сорбет</p>
-        <a href="#" type="button" class="content-button slider-button">Давайте оба!</a>
+        <a href="#" class="content-button slider-button">Давайте оба!</a>
       </div>
       <div class="slide slide-3">
         <img src="img/ice-creame-3.png" width="1045" height="827" alt="Два рожка с мороженым">
         <p class="slider-title">Пломбир с помадкой<br> и клубничный щербет</p>
-        <a href="#" type="button" class="content-button slider-button">Давайте оба!</a>
+        <a href="#" class="content-button slider-button">Давайте оба!</a>
       </div>
       <div class="slider-navigation">
         <button type="button" class="slide-1-button active">
-          <p class="visually-hidden">Слайд 1</p>
+          <span class="visually-hidden">Слайд 1</span>
         </button>
         <button type="button" class="slide-2-button">
-          <p class="visually-hidden">Слайд 2</p>
+          <span class="visually-hidden">Слайд 2</span>
         </button>
         <button type="button" class="slide-3-button">
-          <p class="visually-hidden">Слайд 3</p>
+          <span class="visually-hidden">Слайд 3</span>
         </button>
       </div>
     </section>
@@ -114,12 +114,12 @@
       <article class="raspberry">
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#" type="button" class="content-button banner-link">Хочу варенье!</a>
+        <a href="#" class="content-button banner-link">Хочу варенье!</a>
       </article>
       <article class="chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a href="#" type="button" class="content-button banner-link">Хочу шоколадки!</a>
+        <a href="#" class="content-button banner-link">Хочу шоколадки!</a>
       </article>
     </section>
 
@@ -202,14 +202,14 @@
         <button type="button" class="content-button feedback-button">Форма обратной связи</button>
       </div>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716342318!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1583690243054!5m2!1sru!2spl" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716342318!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1583690243054!5m2!1sru!2spl" height="430" style="border:0;" allowfullscreen=""></iframe>
   </section>
   <footer class="footer">
     <ul class="social-links">
-      <li><a href="#" class="twitter" aria-lable="twitter" target="_blank"></a></li>
-      <li><a href="#" class="instagram" aria-lable="instagram" target="_blank"></a></li>
-      <li><a href="#" class="facebook" aria-lable="facebook" target="_blank"></a></li>
-      <li><a href="#" class="vkontakte" aria-lable="vkontakte" target="_blank"></a></li>
+      <li><a href="#" class="twitter" target="_blank"><span class="visually-hidden">twitter</span></a></li>
+      <li><a href="#" class="instagram" target="_blank"><span class="visually-hidden">instagram</span></a></li>
+      <li><a href="#" class="facebook" target="_blank"><span class="visually-hidden">facebook</span></a></li>
+      <li><a href="#" class="vkontakte" target="_blank"><span class="visually-hidden">vkontakte</span></a></li>
     </ul>
     <div class="footer-navigation">
       <ul class="footer-info">
@@ -227,7 +227,7 @@
     <section class="feedback-popup">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <button type="button" class="modal-close">
-        <p class="visually-hidden">Закрыть окно</p>
+        <span class="visually-hidden">Закрыть окно</span>
       </button>
       <h3>Мы обязательно вам ответим!</h3>
       <form class="feedback-form" action="echo/htmlacademy.ru" method="post">
@@ -241,6 +241,6 @@
     </section>
   </div>
   <script src="js/main-slider.min.js"></script>
-  <script src="js/feedback-modal.min.js"></script>
+  <script src="js/feedback.min.js"></script>
 </body>
 </html>

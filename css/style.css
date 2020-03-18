@@ -319,7 +319,7 @@ body{
   background-color: #f8f7f4;
 }
 
-.header-search-form input[type="search"]{
+.header-search-form input[type='search']{
   width: 100%;
   height: 44px;
   padding-left: 15px;
@@ -433,8 +433,8 @@ a.login:hover svg{
   background-color: #f8f7f4;
 }
 
-.header-login-form input[type="email"],
-.header-login-form input[type="password"]{
+.header-login-form input[type='email'],
+.header-login-form input[type='password']{
   height: 45px;
   width: 100%;
   padding-left: 15px;
@@ -461,8 +461,8 @@ a.login:hover svg{
   padding-left: 14px;
 }
 
-.header-login-form input[type="email"]:focus,
-.header-login-form input[type="email"]:active{
+.header-login-form input[type='email']:focus,
+.header-login-form input[type='email']:active{
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -1173,6 +1173,7 @@ a.full-basket:focus ~ .header-basket{
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 .contacts p{
@@ -1459,6 +1460,11 @@ a.full-basket:focus ~ .header-basket{
   outline: none;
   border: 2px solid #8fbdec;
   padding-left: 14px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
 }
 
 .feedback-form textarea:focus,
@@ -1524,6 +1530,11 @@ a.full-basket:focus ~ .header-basket{
   color: #ffffff;
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:active{
+  color: #FFBC9E;
+}
+
 .breadcrumbs li{
   position: relative;
   padding-right: 14px;
@@ -1581,13 +1592,24 @@ a.full-basket:focus ~ .header-basket{
   padding: 5px 0 5px 8px;
 }
 
-.filter-form .sort-direction{
+.filter-form .select-wrap{
   width: 195px;
+  padding: 0 5px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 5px 0 5px 8px;
+}
+
+.filter-form .sort-direction{
+  width: 175px;
 
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
 
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
@@ -1798,7 +1820,7 @@ input.fat-radio:disabled + label::before{
   padding-left: 18px;
 }
 
-.filter-form button[type="submit"]{
+.filter-form button[type='submit']{
   display: block;
   width: 145px;
   height: 35px;
@@ -1814,14 +1836,14 @@ input.fat-radio:disabled + label::before{
   cursor: pointer;
 }
 
-.filter-form button[type="submit"]:hover,
-.filter-form button[type="submit"]:focus{
+.filter-form button[type='submit']:hover,
+.filter-form button[type='submit']:focus{
   border: none;
   background-color: #fbfcfb;
   color: #323232;
 }
 
-.filter-form button[type="submit"]:active{
+.filter-form button[type='submit']:active{
   border: none;
   background-color: #eaeaea;
   color: #323232;
