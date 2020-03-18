@@ -64,6 +64,48 @@ body{
 	margin: 0 auto;
 }
 
+.placeholder::-webkit-input-placeholder,
+.placeholder::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.placeholder:-moz-placeholder,
+.placeholder:-moz-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.placeholder::-moz-placeholder,
+.placeholder::-moz-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.placeholder:-ms-input-placeholder,
+.placeholder:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.placeholder::placeholder,
+.placeholder::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+/* content button */
+
 .content-button{
 	min-height: 45px;
 	padding: 15px 20px;
@@ -326,6 +368,11 @@ body{
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
 }
 
 .header-search-form input:hover{
@@ -338,11 +385,6 @@ body{
   outline: none;
   border: 2px solid #8fbdec;
   padding-left: 14px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #323232;
 }
 
 .header-navigation button{
@@ -452,6 +494,11 @@ a.login:hover svg{
 .header-login-form input:hover{
   border: 2px solid #c7c6c5;
   padding-left: 14px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
 }
 
 .header-login-form input:focus,
@@ -459,14 +506,6 @@ a.login:hover svg{
   outline: none;
   border: 2px solid #8fbdec;
   padding-left: 14px;
-}
-
-.header-login-form input[type='email']:focus,
-.header-login-form input[type='email']:active{
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #323232;
 }
 
 .header-login-form button{
@@ -1116,6 +1155,11 @@ a.full-basket:focus ~ .header-basket{
 
   font-size: 16px;
   line-height: 24px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
 }
 
 .subscription-form input:hover{
@@ -1128,11 +1172,6 @@ a.full-basket:focus ~ .header-basket{
 .subscription-form input:active{
   outline: none;
   border: 2px solid #8fbdec;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #323232;
 }
 
 .subscription-form button{
@@ -1439,7 +1478,11 @@ a.full-basket:focus ~ .header-basket{
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   padding: 0 15px;
-  color: #999999;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
 }
 
 .feedback-form .invalid{
@@ -1460,11 +1503,6 @@ a.full-basket:focus ~ .header-basket{
   outline: none;
   border: 2px solid #8fbdec;
   padding-left: 14px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #323232;
 }
 
 .feedback-form textarea:focus,
